@@ -1,7 +1,8 @@
 version: '2'
 
 services:
-    wordpress:
+    bvs_hpcs_wordpress:
+        container_name: bvs_hpcs_wordpress
         image: drlogout/wordpress-duplicator:v1.0.0
         ports:
             - 8000:80
@@ -9,9 +10,10 @@ services:
             - "./wordpress:/var/www/html"
         restart: always
         links:
-            - mysql:database
+            - bvs_hpcs_mysql:database
 
-    mysql:
+    bvs_hpcs_mysql:
+        container_name: bvs_hpcs_mysql
         image: mariadb:10.1.18
         environment:
             MYSQL_DATABASE: wordpress
