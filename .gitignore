@@ -1,12 +1,3 @@
 *.log
 
-docker/wordpress/wp-content/bvs-site/
-docker/wordpress/wp-content/advanced-cache.php
-docker/wordpress/wp-content/backup-db/
-docker/wordpress/wp-content/backups/
-docker/wordpress/wp-content/blogs.dir/
-docker/wordpress/wp-content/cache/
-docker/wordpress/wp-content/upgrade/
-docker/wordpress/wp-content/uploads/
-docker/wordpress/wp-content/wp-cache-config.php
-docker/wordpress/wp-content/plugins/hello.php
+!/mysql/*
