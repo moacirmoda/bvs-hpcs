@@ -55,14 +55,16 @@
             </div>
 
             <div class='row top'>
-                <div class='col-sm-1 bvs-logo'>
-                    <img src="<?php bloginfo('template_url') ?>/static/img/logobvs.png" alt="Biblioteca Virtual em Saúde"/>
-                </div>
+                <a href="<?php bloginfo('wpurl'); ?>">
+                    <div class='col-sm-1 bvs-logo'>
+                        <img src="<?php bloginfo('template_url') ?>/static/img/logobvs.png" alt="Biblioteca Virtual em Saúde"/>
+                    </div>
 
-                <div class='col-sm-11 bvs-title'>
-                    <h2><?php bloginfo('description'); ?></h2>
-                    <h1><?php bloginfo('name'); ?></h1>
-                </div>
+                    <div class='col-sm-11 bvs-title'>
+                        <h2><?php bloginfo('description'); ?></h2>
+                        <h1><?php bloginfo('name'); ?></h1>
+                    </div>
+                </a>
             </div>
 
             <div class='row search'>
