@@ -9,15 +9,15 @@
                         <h2 class="storytitle"><?php the_title(); ?></h2>
                         <div class="storycontent">
                             <?php the_content(__('(more...)')); ?>
-                        </div>
-                        <div class="child-pages">
-                            <ul>
-                              <?php
-                                 global $id;
-                                 $post_type = get_post_type( $id );
-                                 wp_list_pages("post_type=" . $post_type. "&title_li=&child_of=" . $id);
-                              ?>
-                            </ul>
+                            <div class="child-pages">
+                                <ul>
+                                  <?php
+                                     global $id;
+                                     $post_type = get_post_type( $id );
+                                     wp_list_pages("post_type=" . $post_type. "&title_li=&child_of=" . $id);
+                                  ?>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 <?php endwhile; else: ?>
