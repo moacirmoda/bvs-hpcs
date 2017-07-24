@@ -91,14 +91,15 @@ header {
 
     }
 
-    .search {
+    .search, .searchform {
         background-color: $color2;
         padding: 20px 0px;
         font-family: $font-roboto;
         font-size: 11pt;
 
-        .form-control {
+        .form-control, #s {
             height: 50px;
+            width: 100%;
         }
     }
 }
@@ -238,6 +239,6 @@ footer {
 }
 
 // cleanings
-.vhl-search-submit, label[for=vhl-search-input] {
+.vhl-search-submit, label[for=vhl-search-input], .screen-reader-text, #searchsubmit {
     display: none;
 }

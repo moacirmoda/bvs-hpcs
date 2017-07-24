@@ -3,7 +3,7 @@
 <div class='content'>
     <div class='container'>
         <div class='row single'>
-            <div class='col-sm-9'>
+            <div class='col-sm-12'>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
@@ -27,12 +27,6 @@
                 <?php endwhile; else: ?>
                     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
                 <?php endif; ?>
-            </div>
-
-            <div class='col-sm-3'>
-                <div class='row sidebar'>
-                    <?php dynamic_sidebar('sidebar'); ?>
-                </div>
             </div>
         </div>
     </div>
