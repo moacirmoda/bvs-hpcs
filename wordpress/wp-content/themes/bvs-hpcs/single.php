@@ -9,7 +9,7 @@
                         <h2 class="storytitle"><?php the_title(); ?></h2>
                         <div class="storycontent">
                             <?php the_content(__('(more...)')); ?>
-                            <div class="child-pages">
+                            <!-- <div class="child-pages">
                                 <ul>
                                   <?php
                                      global $id;
@@ -17,7 +17,7 @@
                                      wp_list_pages("post_type=" . $post_type. "&title_li=&child_of=" . $id);
                                   ?>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 <?php endwhile; else: ?>
